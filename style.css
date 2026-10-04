@@ -1092,3 +1092,39 @@ iframe {
   font-size: 15px;
   color: #ddd;
 }
+
+
+/* zodiac grid cards: scale down on phones without touching .card used elsewhere */
+@media (max-width: 600px) {
+  .wrap {
+    margin: 30px auto 50px;
+    padding: 0 16px;
+  }
+
+  .wrap header h1 {
+    font-size: 26px;
+  }
+
+  .wrap header p {
+    font-size: 14px;
+  }
+
+  .grid .card {
+    min-height: auto;
+    padding: 20px 16px 18px;
+    gap: 8px;
+  }
+
+  .grid .card svg.icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .grid .card .title {
+    font-size: 20px;
+  }
+
+  .grid .card .know-more {
+    font-size: 13px;
+  }
+}
