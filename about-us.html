@@ -14,7 +14,7 @@
   <div class="head container justify-content-between align-items-center  d-flex mt-3">
       <div class="text-start">
           <span><i class="fa-solid fa-location-dot me-2"></i>
-              <span class="text me-4"> House No- 105, ABC Colony, Sector-20, Panchkula, Haryana 100104</span>
+              <span class="text me-4"> 123 Anywhere Street, Your City, ST 000000</span>
               <i class="fa-solid fa-phone me-2"></i>
               <span class="text me-4"> 8427-4417-77</span>
               <i class="fa-solid fa-envelope"></i>
@@ -22,10 +22,10 @@
       </div>
       <div class="text-end">
           <span class="">
-              <i class="fa-brands fa-facebook me-2"></i>
-              <i class="fa-brands fa-twitter me-2"></i>
-              <i class="fa-brands fa-linkedin-in me-2"></i>
-              <i class="fa-brands fa-whatsapp"></i>
+              <a href="https://facebook.com" class="text-decoration-none text-light me-2"><i class="fa-brands fa-facebook me-2"></i></a>
+              <a href="https://twitter.com" class="text-decoration-none text-light me-2"><i class="fa-brands fa-twitter me-2"></i></a>
+              <a href="https://linkedin.com" class="text-decoration-none text-light me-2"><i class="fa-brands fa-linkedin-in me-2"></i></a>
+              <a href="https://wa.me/1234567890" class="text-decoration-none text-light"><i class="fa-brands fa-whatsapp"></i></a>
           </span>
       </div>
 
@@ -34,7 +34,7 @@
 
   <nav class="navbar container navbar-expand-lg bg-body-primary mt-4">
       <div class="container-fluid">
-        <a class="navbar-brand text-light" href="#"> <img src="./images/logo-final.png" alt="" class="logo-img"></a>
+        <a class="navbar-brand text-light" href="./index.html"> <img src="./images/logo-final.png" alt="" class="logo-img"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -346,10 +346,10 @@
       <h1 class="logo"><img src="./images/logo-final.png" alt="" class="logo-img"></h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
       <div class="social-icons">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-linkedin-in"></i>
-        <i class="fab fa-whatsapp"></i>
+        <a href="https://facebook.com" class="text-decoration-none text-light me-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" class="text-decoration-none text-light me-2"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com" class="text-decoration-none text-light me-2"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/1234567890" class="text-decoration-none text-light"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
 
@@ -374,10 +374,10 @@
 
     <div class="footer-col newsletter">
       <h3>Newsletter</h3>
-      <div class="newsletter-box">
-        <input type="email" placeholder="Email Address">
-        <button><i class="fas fa-paper-plane"></i></button>
-      </div>
+      <form class="newsletter-box" id="newsletter-form">
+  <input type="email" id="newsletter-email" name="email" placeholder="Email Address" required>
+  <button type="submit" id="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+</form>
     </div>
   </div>
   <div class="footer-bottom">

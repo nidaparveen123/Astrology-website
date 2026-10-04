@@ -127,3 +127,26 @@ if (modalOverlay) {
     if (e.key === "Escape") closeZodiacModal();
   });
 }
+
+const newsletterForm = document.getElementById("newsletter-form");
+
+if (newsletterForm) {
+  const newsletterInput = document.getElementById("newsletter-email");
+  const newsletterBtn = document.getElementById("newsletter-btn");
+  const originalBtnHTML = newsletterBtn.innerHTML;
+
+  newsletterForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    if (!newsletterInput.value) return; // nothing typed, do nothing
+
+    newsletterBtn.innerHTML = "Sent!";
+    newsletterBtn.disabled = true;
+
+    setTimeout(() => {
+      newsletterInput.value = "";
+      newsletterBtn.innerHTML = originalBtnHTML;
+      newsletterBtn.disabled = false;
+    }, 2000); // reverts after 2 seconds
+  });
+}
